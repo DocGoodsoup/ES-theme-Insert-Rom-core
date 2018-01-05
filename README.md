@@ -30,7 +30,7 @@ INSERT ROM DETAILED theme contains 16x9 version and a 4x3 mod to install in case
 2) How to install ?
 
 **For CORE version withe 16:9 ratio:**
-Simply upload core folder to /home/pi/.emulationstation/themes
+	Simply upload core folder to /home/pi/.emulationstation/themes
 
 **For CORE version withe 4:3 ratio:**
 	Upload core folder to /home/pi/.emulationstation/themes
