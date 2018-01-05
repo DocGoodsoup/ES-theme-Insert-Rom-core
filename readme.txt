@@ -50,11 +50,17 @@ INSERT ROM DETAILED theme contains 16x9 version and a 4x3 mod to install in case
 	by: <include>./_inc/templates/4x3_details.xml</include>
 
 **For Detailed custom version 16:9 ratio :**
-	Upload detailed folder to /home/pi/.emulationstation/themes
+
+	Upload core folder to /home/pi/.emulationstation/themes
+	
+	then upload Mod custom detailed 16:9 to Insert Rom theme folder
+
+
 
 **For Detailed non-custom version 4:3 ratio :**
-	Upload detailed folder to /home/pi/.emulationstation/themes
-	Unzip 4x3_mod.zip at the root folder. Overwrite files.
+
+	Upload core folder to /home/pi/.emulationstation/themes
+	then upload Mod custom detailed 4:3 to Insert Rom theme folder
 	
 	
 3) Known issues
