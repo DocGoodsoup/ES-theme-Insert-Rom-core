@@ -1,0 +1,58 @@
+<theme>
+	<formatVersion>4</formatVersion>
+	<include>./../theme.xml</include>
+
+	<view name="system">
+		<image name="logo">
+			<path>./_inc/background.jpg</path>
+		</image>
+	</view>
+	
+	<view name="basic, detailed, video">
+		<image name="logo">
+			<path>./_inc/system.svg</path>
+		</image>
+	</view>	
+	
+	<view name="detailed, video">
+		
+        <image name="background" extra="true">
+			<tile>true</tile>
+			<path>./../_inc/images/background_basic.png</path>
+        </image>
+		
+		<image name="bezel" extra="true">
+			<pos>1 1</pos>
+			<origin>0 0</origin>
+		</image>
+			
+		<text name="md_players">
+			<pos>0 0</pos> 
+			<origin>1 1</origin>
+		</text>		
+		<datetime name="md_releasedate">
+			<pos>0 0</pos> 
+			<origin>1 1</origin>
+		</datetime>	
+		<text name="md_description">
+			<pos>0.5 0.5</pos> 
+			<origin>0.5 0.5</origin>
+		</text>			
+				
+		<image name="scanlines" extra="true">
+			<origin>0 0</origin>
+			<pos>1 1</pos>
+		</image>
+		
+	</view>	
+	
+   	<feature supported="video">
+      <view name="video">
+		<video name="md_video">
+			<origin>0 0</origin>
+			<pos>1 1</pos>
+		</video>
+      </view>
+	</feature>
+
+</theme>
