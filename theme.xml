@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+theme name:     Insert Rom
+version:        1.0
+author:         Doc Goodsoup
+license:        Free to share and modify, for only non-commercial projects and purposes.
+-->
+<theme>
+   <formatVersion>4</formatVersion>
+   <include>./_inc/templates/16x9.xml</include>
+</theme>

@@ -1,0 +1,197 @@
+<theme>
+   <formatVersion>4</formatVersion>
+
+   <view name="system,basic,detailed,video">
+      <!-- <image name="background" extra="true"> -->
+         <!-- <origin>0.5 0.5</origin> -->
+         <!-- <pos>0.5 0.5</pos> -->
+         <!-- <size>1 1</size> -->
+         <!-- <tile>false</tile> -->
+         <!-- <path>./../images/000.png</path> -->
+      <!-- </image>	   -->
+
+	  <helpsystem name="help">
+		 <pos>1 1</pos>
+	  </helpsystem>
+   </view>
+   
+   <feature supported="carousel">
+      <view name="system">	  
+         <carousel name="systemcarousel">
+			<type>horizontal</type>
+			<size>1.614 0.6</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxLogoCount>3</maxLogoCount>
+			<logoSize>0.3125 0.4</logoSize>
+			<logoScale>1.5</logoScale>
+			<color>00000000</color>
+         </carousel>
+		 
+		 <text name="systemInfo">
+			<color>ff00ff</color>
+			<fontSize>0.025</fontSize>
+			<pos>0.5 0.97</pos>
+			<origin>0.5 0.5</origin>	
+			<size>0.6 0.025</size>
+			<fontPath>./../fonts/Bender_Bold.otf</fontPath>
+			<forceUppercase>0</forceUppercase>
+		 </text>	 
+      </view>
+   </feature>
+
+   
+   <view name="basic,detailed,video">	 
+   		<image name="bezel" extra="true">
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<path>./../images/bezel_4x3.png</path>
+			<maxSize>1 1</maxSize>
+		</image> 
+        <image name="background" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<tile>true</tile>
+			<path>./../images/background_basic.png</path>
+        </image>
+		<image name="logo">
+			<pos>0.5 0.1481</pos>	
+			<origin>0.5 0.5</origin>
+			<maxSize>0.391 0.1759</maxSize>
+		</image>
+		
+      <textlist name="gamelist">
+         <pos>0.1875 0.267592</pos>
+         <size>0.625 0.4685</size>
+         <selectorColor>3b60ff</selectorColor>
+         <selectedColor>FFFFFF</selectedColor>	
+         <primaryColor>FFFFFF80</primaryColor>
+         <secondaryColor>ff7e00</secondaryColor>	
+		 <lineSpacing>1.45</lineSpacing>
+         <fontPath>./../fonts/Bender_Bold.otf</fontPath>
+		 <fontSize>0.0283333</fontSize>
+         <alignment>center</alignment>
+		 <selectorImagePath>./../images/selected.png</selectorImagePath>		
+	  </textlist>
+   </view>
+   
+
+	
+   
+   <view name="detailed,video">      	  
+		<!-- Metadata -->
+		<text name="md_players">
+			<pos>0.1406 0.8789</pos> 
+			<origin>0.5 0.5</origin>
+			<fontSize>0.0263</fontSize>
+			<alignment>center</alignment>
+			<color>FFFFFF</color>
+			<size>0.1172 0.0263</size>
+			<fontPath>./../fonts/Bender_Bold.otf</fontPath>
+		</text>
+		
+		<text name="md_description">
+			<fontPath>./../fonts/Bender_Bold.otf</fontPath>
+			<pos>1 1</pos>
+			<origin>0 0</origin>
+		</text>	  
+	  
+		<datetime name="md_releasedate">
+			<pos>0.9 0.009</pos>
+			<size>0.068 0.0223</size>
+			<fontPath>./../fonts/Bender_Bold.otf</fontPath>
+			<fontSize>0.022</fontSize>
+			<color>FFFFFF</color>
+		</datetime>
+	  
+		<image name="md_image">
+			<pos>1.015625 1.04</pos>
+			<origin>1 1</origin>
+			<rotation>2</rotation>
+			<maxSize>0.3125 0.3711</maxSize>
+		</image>	  
+	  
+		<image name="md_marquee">
+			<pos>0.5 0.97</pos>
+			<origin>0.5 1</origin>
+			<maxSize>0.4287 0.2382</maxSize>
+		</image>
+			  
+	</view>
+   
+   
+	<view name="system,detailed,video">	
+		<image name="scanlines" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<tile>true</tile>
+			<path>./../images/scanlines_2px.png</path>
+		</image>  
+	</view>
+   
+   
+	<feature supported="video">
+      <view name="video">
+		<video name="md_video">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<maxSize>2 1</maxSize>
+			<delay>1</delay>
+			<showSnapshotDelay>false</showSnapshotDelay> 
+			<default>./../videos/static.mp4</default>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+		</video>
+      </view>
+	</feature>
+   
+   
+	<feature supported="z-index">
+		<view name="system,basic,detailed,video">
+			<image name="background" extra="true">
+				<zIndex>0</zIndex>
+			</image>
+			<carousel name="systemcarousel">
+				<zIndex>70</zIndex>
+			</carousel>
+		</view>
+				
+		<view name="basic,detailed,video">	 
+			<image name="bezel" extra="true">
+				<zIndex>100</zIndex>
+			</image> 
+		</view>
+		
+		<view name="detailed,video">
+			<textlist name="gamelist">
+				<zIndex>10</zIndex>		
+			</textlist>  
+			<image name="logo">
+				<zIndex>5</zIndex>
+			</image>
+			<text name="md_players">
+				<zIndex>90</zIndex>
+			</text>	 	  
+			<datetime name="md_releasedate">	
+				<zIndex>90</zIndex>
+			</datetime>
+			<image name="md_image">			
+				<zIndex>90</zIndex>
+			</image>
+			<image name="md_marquee">
+				<zIndex>80</zIndex>
+			</image>
+			<video name="md_video">
+				<zIndex>70</zIndex>
+			</video>
+		</view> 
+		
+		<view name="system,detailed,video">				
+			<image name="scanlines" extra="true">
+				<zIndex>75</zIndex>
+			</image>
+		</view>
+	</feature>
+   
+</theme>

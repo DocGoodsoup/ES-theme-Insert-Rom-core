@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+theme name:     Insert Rom
+version:        1.0
+author:         Doc Goodsoup
+license:        creative commons CC-BY-NC-SA
+based on:       "CRT" by Anthony
+-->
+<theme>
+   <formatVersion>4</formatVersion>
+
+   <view name="system,basic,detailed,video">
+	  <helpsystem name="help">
+		 <pos>1 1</pos>
+	  </helpsystem>
+   </view>
+   
+   <!-- <view name="system"> -->
+      <!-- <image name="background" extra="true"> -->
+         <!-- <origin>0.5 0.5</origin> -->
+         <!-- <pos>0.5 0.5</pos> -->
+         <!-- <size>1 1</size> -->
+		 <!-- <tile>true</tile> -->
+		 <!-- <path>./../images/000.png</path> -->
+      <!-- </image>	   -->
+   <!-- </view>  -->
+   
+   <feature supported="carousel">
+      <view name="system">	  
+         <carousel name="systemcarousel">
+			<type>horizontal</type>
+			<size>1.614 0.6</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxLogoCount>3</maxLogoCount>
+			<logoSize>0.3125 0.4</logoSize>
+			<logoScale>1.5</logoScale>
+			<color>00000000</color>
+         </carousel>
+		 
+		 <text name="systemInfo">
+			<color>ff00ff</color>
+			<fontSize>0.025</fontSize>
+			<pos>0.5 0.97</pos>
+			<origin>0.5 0.5</origin>	
+			<size>0.6 0.025</size>
+			<fontPath>./../fonts/Bender_Bold.otf</fontPath>
+			<forceUppercase>0</forceUppercase>
+		 </text>	 
+      </view>
+   </feature>
+ 
+   <view name="basic,detailed,video">	  
+      <textlist name="gamelist">
+         <pos>0.1875 0.267592</pos>
+         <size>0.625 0.63915</size>
+         <selectorColor>3b60ff</selectorColor>
+         <selectedColor>FFFFFF</selectedColor>	
+         <primaryColor>FFFFFF80</primaryColor>
+         <secondaryColor>ff7e00</secondaryColor>	
+		 <lineSpacing>1.45</lineSpacing>
+         <fontPath>./../fonts/Bender_Bold.otf</fontPath>
+		 <fontSize>0.0283333</fontSize>
+         <alignment>center</alignment>		
+	  </textlist>
+   </view>
+   
+
+   <view name="basic">	 
+        <image name="background" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<tile>true</tile>
+			<path>./../images/background_basic.png</path>
+        </image>
+		<image name="logo">
+			<pos>0.5 0.1481</pos>	
+			<origin>0.5 0.5</origin>
+			<maxSize>0.391 0.1759</maxSize>
+		</image>
+	</view>
+	
+   
+   <view name="detailed,video"> 		
+		<textlist name="gamelist">		 
+			<pos>0.2625 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.3672 0.4630</size>
+			<fontSize>0.024</fontSize>
+		</textlist>
+		
+   		<image name="bezel" extra="true">
+			<origin>0 0.5</origin>
+			<pos>0 0.5</pos>
+			<maxSize>1 1</maxSize>
+			<path>./../images/bezel_detailed.png</path>
+		</image>
+		
+		<image name="logo">
+			<pos>0.984375 0.9722</pos>	
+			<origin>1 1</origin>
+			<maxSize>0.234375 0.0833</maxSize>
+		</image>
+      	  					  	  
+		<image name="md_image">		
+			<pos>0.525 0.8333</pos>
+			<origin>1 1</origin>
+			<maxSize>0.1771 0.3148</maxSize>
+			<rotation>5</rotation>
+		</image>		
+	  
+		<image name="md_marquee">
+			<pos>0.75 0.2620</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.3125 0.333333</maxSize>
+		</image>
+		 
+		<!-- Metadata --> 
+		<text name="
+			md_lbl_rating,
+			md_lbl_releasedate,
+			md_lbl_developer, md_developer,
+			md_lbl_publisher, md_publisher,
+			md_lbl_genre, md_genre,
+			md_lbl_players, md_players,
+			md_description
+			">
+				<fontPath>./../fonts/Bender_Bold.otf</fontPath>
+				<fontSize>0.018</fontSize>		
+				<color>FFFFFF</color>
+				<pos>0.5625 0.4722</pos>
+		</text>
+			
+		<text name="md_lbl_rating">
+			<origin>0 0</origin>
+			<size>0.15 0.018</size>
+			<forceUppercase>true</forceUppercase>
+			</text>
+			<rating name="md_rating">	
+				<color>FFFFFF</color>
+				<size>0.0469 0.018</size>				
+				<pos>0.605 0.4722</pos>
+			</rating>
+		<text name="md_lbl_releasedate">
+			<origin>0 -1.5</origin>
+			<size>0.0557 0.018</size>
+			<forceUppercase>true</forceUppercase>
+			</text>
+			<datetime name="md_releasedate">
+				<fontPath>./../fonts/Bender_Bold.otf</fontPath>
+				<fontSize>0.018</fontSize>		
+				<color>FFFFFF</color>
+				<forceUppercase>true</forceUppercase>
+				<size>0.1 0.018</size>				
+				<pos>0.61875 0.4988</pos>
+				</datetime>
+		<text name="md_lbl_developer">
+			<origin>0 -3</origin>
+			<size>0.0609 0.018</size>
+			<forceUppercase>true</forceUppercase>
+			</text>	
+			<text name="md_developer">
+				<origin>-0.25984 -3</origin> <!-- origin_x = size_x_md_lbl / size_x_md -->
+				<size>0.234375 0.018</size>
+				</text>
+		<text name="md_lbl_publisher">
+			<origin>0 -4.5</origin>
+			<size>0.0609 0.018</size>
+			<forceUppercase>true</forceUppercase>
+			</text>
+			<text name="md_publisher">
+				<origin>-0.25984 -4.5</origin>
+				<size>0.234375 0.018</size>
+				</text>
+		<text name="md_lbl_genre">
+			<origin>0 -6</origin>
+			<size>0.0391 0.018</size>
+			<forceUppercase>true</forceUppercase>
+			</text>
+			<text name="md_genre">
+				<origin>-0.1668 -6</origin>
+				<size>0.234375 0.018</size>
+				</text>
+		<text name="md_lbl_players">
+			<origin>0 -7.5</origin>
+			<size>0.0495 0.018</size>
+			<forceUppercase>true</forceUppercase>
+			</text>
+			<text name="md_players">
+				<origin>-1 -7.5</origin>
+				<size>0.0495 0.018</size>
+				</text>				
+		<text name="md_description">
+			<origin>0 -0.85</origin>
+			<size>0.28125 0.22</size>
+			<color>c4c4c4</color>
+			</text>	  
+	</view>   
+ 
+ 
+	<feature supported="video">
+      <view name="video">
+		<video name="md_video">
+			<origin>0.5 0.5</origin>
+			<pos>0.2635 0.5</pos>
+			<maxSize>0.375 0.5</maxSize>
+			<delay>0.5</delay>
+			<showSnapshotDelay>false</showSnapshotDelay> 
+			<default>./../videos/static.mp4</default>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<rotation>-5</rotation>
+		</video>
+      </view>
+	</feature>
+ 
+	 
+	<feature supported="z-index">
+		<view name="detailed,video">
+			<textlist name="gamelist">
+				<zIndex>20</zIndex>
+			</textlist>
+			<image name="bezel" extra="true">
+				<zIndex>40</zIndex>
+			</image>
+			<image name="md_image">
+				<zIndex>50</zIndex>
+			</image>				
+			<image name="logo">
+				<zIndex>100</zIndex>
+			</image>
+			<text name="
+			md_lbl_rating,
+			md_lbl_releasedate,
+			md_lbl_developer, md_developer,
+			md_lbl_publisher, md_publisher,
+			md_lbl_genre, md_genre,
+			md_lbl_players, md_players,
+			md_description
+			">	
+				<zIndex>100</zIndex>
+			</text>			
+				<rating name="md_rating">
+					<zIndex>100</zIndex>
+				</rating>
+				<datetime name="md_releasedate">
+					<zIndex>100</zIndex>
+				</datetime>
+			<image name="md_marquee">
+				<zIndex>100</zIndex>
+			</image>
+			<video name="md_video">
+				<zIndex>30</zIndex>
+			</video>
+		</view>   		
+	</feature>
+   
+</theme>
