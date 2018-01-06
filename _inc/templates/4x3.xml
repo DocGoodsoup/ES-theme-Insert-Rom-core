@@ -82,7 +82,7 @@
    <view name="detailed,video">      	  
 		<!-- Metadata -->
 		<text name="md_players">
-			<pos>0.1406 0.8789</pos> 
+			<pos>0.0437 0.8142</pos> 
 			<origin>0.5 0.5</origin>
 			<fontSize>0.0263</fontSize>
 			<alignment>center</alignment>
